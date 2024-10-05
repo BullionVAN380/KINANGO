@@ -1,6 +1,6 @@
 import './App.css';
 import { Link, Routes, Route } from 'react-router-dom';
-import Container  from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Home from './pages/Home/Home';
@@ -22,44 +22,40 @@ function App() {
   return (
     <div>
       <ContactNav />
-     <Navbar expand="lg" className='position-sticky w-100 fixed-top bg-purple'>
-  <Container>
-    <Navbar.Brand>
-      
-    </Navbar.Brand>
-    <Navbar.Toggle aria-controls='basic-navbar-nav' className='bg-light' />
-    <Navbar.Collapse id='basic-navbar-nav'>
-      <Nav className='me-auto justify-content-end w-100'>
-        <Nav.Link href='/' className='text-uppercase'>Home</Nav.Link>
-        <Link to='/courses' className='text-uppercase'>Our courses</Link>     
+      <Navbar expand="lg" className='position-sticky w-100 fixed-top bg-purple'>
+        <Container>
+          <Navbar.Brand></Navbar.Brand>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' className='bg-light' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='me-auto justify-content-end w-100'>
+              <Link to='/' className='custom-link nav-link text-uppercase'>Home</Link>
+              <Link to='/courses' className='custom-link nav-link text-uppercase'>Our Courses</Link>
 
-        <NavDropdown title="AboutUs" id="Aboutus-dropdown" className='text-uppercase'>
-          <NavDropdown.Item href="/aboutktvc">About KTVC</NavDropdown.Item>
-          <NavDropdown.Item href="/whychoosektvc">Why Choose KTVC</NavDropdown.Item>
-          <NavDropdown.Item href="/principalmessaged">Principal Message</NavDropdown.Item>
-        </NavDropdown>
-        
-        <NavDropdown title="News & Events" id="News&Events-dropdown" className='text-uppercase'>
-          <NavDropdown.Item href="/news">News</NavDropdown.Item>
-          <NavDropdown.Item href="/events">Events</NavDropdown.Item>
-          <NavDropdown.Item href="/noticeboard">Noticeboard</NavDropdown.Item>
-        </NavDropdown>
+              <NavDropdown title="About Us" id="aboutus-dropdown" className='text-uppercase'>
+                <NavDropdown.Item as={Link} to="/aboutktvc" className="custom-link">About KTVC</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/whychoosektvc" className="custom-link">Why Choose KTVC</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/principalmessage" className="custom-link">Principal Message</NavDropdown.Item>
+              </NavDropdown>
 
-        <Nav.Link href='/contact' className='text-uppercase'>Get in touch</Nav.Link>
-        <Nav.Link href='/downloads' className='text-uppercase'>Downloads</Nav.Link>
-                
-       
-        <NavDropdown title="Portal" id="portal-dropdown" className='text-uppercase'>
-          <NavDropdown.Item href="https://intellimis.com/login">Students</NavDropdown.Item>
-          <NavDropdown.Item href="https://intellimis.com/back-login">Staff</NavDropdown.Item>
-          <NavDropdown.Item href="https://intellimis.com/#free-demo">Help</NavDropdown.Item>
-          <NavDropdown.Item href="/portal/faqs">FAQs</NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
+              <NavDropdown title="News & Events" id="news-dropdown" className='text-uppercase'>
+                <NavDropdown.Item as={Link} to="/news" className="custom-link">News</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/events" className="custom-link">Events</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/noticeboard" className="custom-link">Noticeboard</NavDropdown.Item>
+              </NavDropdown>
 
+              <Link to='/contact' className='custom-link nav-link text-uppercase'>Get in Touch</Link>
+              <Link to='/downloads' className='custom-link nav-link text-uppercase'>Downloads</Link>
+
+              <NavDropdown title="Portal" id="portal-dropdown" className='text-uppercase'>
+                <NavDropdown.Item href="https://intellimis.com/login" className="custom-link">Students</NavDropdown.Item>
+                <NavDropdown.Item href="https://intellimis.com/back-login" className="custom-link">Staff</NavDropdown.Item>
+                <NavDropdown.Item href="https://intellimis.com/#free-demo" className="custom-link">Help</NavDropdown.Item>
+                <NavDropdown.Item href="/portal/faqs" className="custom-link">FAQs</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
       <Routes>
         <Route path='/' element={<Home />} />
@@ -70,7 +66,7 @@ function App() {
         <Route path='/downloads' element={<Downloads />} />
         <Route path='/portal' element={<Portal />} />
         <Route path='/news' element={<Blog />} />
-        <Route path='/events' element={<Blog  />} />
+        <Route path='/events' element={<Blog />} />
         <Route path='/noticeboard' element={<Noticeboard />} />
         <Route path='/aboutktvc' element={<AboutKTVC />} />
         <Route path='/whychoosektvc' element={<WhyChooseKTVC />} />
@@ -85,7 +81,7 @@ function App() {
                 <button type='button' className='btn btn-outline-danger btn-lg mb-5 mb-md-4'>Get In Touch</button>
               </Link>
               <ul className='footer-social-icons list-unstyled d-flex justify-content-between'>
-                <Link to="/contact">
+              <Link to="/contact">
                   <li>
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#dc3545" class="bi bi-facebook" viewBox="0 0 16 16">
                       <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
@@ -117,7 +113,7 @@ function App() {
             </div>
             <div className='col-md-7 col-lg-6'>
               <div className='d-row d-md-flex justify-content-between align-items-center'>
-                <div className='col-12 col-md-6 col-lg-5 mb-5 mt-4 my-md-0'>
+              <div className='col-12 col-md-6 col-lg-5 mb-5 mt-4 my-md-0'>
                   <ul className='footer-navigation list-unstyled mb-0'>
                     <Link to="/" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Home</li>
@@ -134,19 +130,6 @@ function App() {
                     <Link to="/contact" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Get In Touch</li>
                     </Link>
-                  </ul>
-                </div>
-                <div className='col-12 col-md-6 col-lg-7'>
-                  <ul className='list-unstyled mb-0'>
-                    <li>
-                      <p>Main Address - Mackinnon Road Township, 800 metres off Nairobi-Mombasa Highway</p>
-                    </li>
-                    <li>
-                      <p>Phone Number - 0722000000</p>
-                    </li>
-                    <li>
-                      <p>Email - ktvc@gmail.co.ke</p>
-                    </li>
                   </ul>
                 </div>
               </div>
