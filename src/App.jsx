@@ -31,7 +31,7 @@ function App() {
     <Navbar.Collapse id='basic-navbar-nav'>
       <Nav className='me-auto justify-content-end w-100'>
         <Nav.Link href='/' className='text-uppercase'>Home</Nav.Link>
-        <Nav.Link href='/courses' className='text-uppercase'>Our courses</Nav.Link>      
+        <Link to='/courses' className='text-uppercase'>Our courses</Link>     
 
         <NavDropdown title="AboutUs" id="Aboutus-dropdown" className='text-uppercase'>
           <NavDropdown.Item href="/aboutktvc">About KTVC</NavDropdown.Item>
