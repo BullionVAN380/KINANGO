@@ -1,0 +1,71 @@
+.home-page header {
+  /*  background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/homepage.jpg);*/
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-section {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/kinangoWall.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* General styles for carousel and header */
+header {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel, .carousel-item {
+  height: 100%; /* Ensure the carousel and items take full height */
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover; /* Make sure images cover the entire area */
+}
+
+/* Remove padding and margin between sections */
+.container-fluid, .container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom adjustments for small screens */
+@media (max-width: 576px) {
+  /* Adjust the height of header for small devices */
+  header {
+    height: auto;
+    min-height: 100vh; /* Ensure it covers full height on small devices */
+  }
+  
+  /* Ensure the carousel takes full width and height on small devices */
+  .carousel-item img {
+    height: auto;
+    max-height: 100%; /* Constrain height to avoid overflow */
+  }
+
+  .carousel-item {
+    height: auto; /* Allow height to adjust on small screens */
+  }
+
+  /* Reduce padding and margin on small screens */
+  .py-5 {
+    padding-top: 1rem !important; /* Smaller padding for small devices */
+    padding-bottom: 1rem !important;
+  }
+
+  /* Remove extra space or padding around the sections */
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
