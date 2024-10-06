@@ -18,11 +18,10 @@ function ContactNav() {
         <Link to="/" className='navbar-brand d-flex align-items-center'>
         <img src={logo} alt="logo" className="img-fluid rounded-circle" style={{ width: "45px", height: "45px" }} />
         <span className='mx-2 text-primary lh-1 fw-semibold fs-6'>
-          KINANGO
+          Kinango Technical &
           <br />
-          TECHNICAL
+          Vocational College
           <br />
-          COLLEGE
         </span>
       </Link>
           

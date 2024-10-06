@@ -17,6 +17,8 @@ import Noticeboard from './components/NoticeBoard/NoticeBoard';
 import PrincipalMessage from './components/PrincipalMessage/PrincipalMessage';
 import AboutKTVC from './components/AboutKTVC/AboutKTVC';
 import WhyChooseKTVC from './components/WhyChooseKTVC/WhyChooseKTVC';
+import TrainerList from './components/TrainerList/TrainerList';
+import FaqAccordion from './components/FaqAccordion/FaqAccordion';
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
               <NavDropdown title="About Us" id="aboutus-dropdown" className='text-uppercase'>
                 <NavDropdown.Item as={Link} to="/aboutktvc" className="custom-link">About KTVC</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/whychoosektvc" className="custom-link">Why Choose KTVC</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/trainers" className="custom-link">Trainers</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/principalmessage" className="custom-link">Principal Message</NavDropdown.Item>
               </NavDropdown>
 
@@ -50,7 +53,7 @@ function App() {
                 <NavDropdown.Item href="https://intellimis.com/login" className="custom-link">Students</NavDropdown.Item>
                 <NavDropdown.Item href="https://intellimis.com/back-login" className="custom-link">Staff</NavDropdown.Item>
                 <NavDropdown.Item href="https://intellimis.com/#free-demo" className="custom-link">Help</NavDropdown.Item>
-                <NavDropdown.Item href="/portal/faqs" className="custom-link">FAQs</NavDropdown.Item>
+                <NavDropdown.Item href="/faqs" className="custom-link">FAQs</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
@@ -71,6 +74,8 @@ function App() {
         <Route path='/aboutktvc' element={<AboutKTVC />} />
         <Route path='/whychoosektvc' element={<WhyChooseKTVC />} />
         <Route path='/principalmessage' element={<PrincipalMessage />} />
+        <Route path='/trainers' element={ <TrainerList />} />
+        <Route path='/faqs' element={ <FaqAccordion />} />
       </Routes>
 
       <footer>

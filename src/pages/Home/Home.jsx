@@ -11,6 +11,7 @@ import BarazaImg from '../../utils/images/baraza.jpg';
 import FresherImg from '../../utils/images/fresher.jpg';
 import SliderShow from '../SliderShow/SliderShow';
 import Noticeboard from '../../components/NoticeBoard/NoticeBoard';
+import DashboardStats from '../../components/DashboardStats/DashboardStats';
 
 
 const blogs = [
@@ -43,6 +44,10 @@ function Home() {
 
         <div className="py-5">
             <ChooseSection />
+        </div>
+
+        <div className="py-5">
+            <DashboardStats/>
         </div>
 
         <div className='py-5 bg-light'>
