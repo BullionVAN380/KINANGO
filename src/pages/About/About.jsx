@@ -1,7 +1,6 @@
 import React from 'react';
 import './About.css';
 import { Link } from 'react-router-dom';
-import AboutUsSectionImg from '../../utils/images/about-us-section-img.jpg';
 import ChooseSection from '../../components/ChooseSection/ChooseSection';
 
 

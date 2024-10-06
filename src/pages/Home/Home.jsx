@@ -12,6 +12,7 @@ import FresherImg from '../../utils/images/fresher.jpg';
 import SliderShow from '../SliderShow/SliderShow';
 import Noticeboard from '../../components/NoticeBoard/NoticeBoard';
 import DashboardStats from '../../components/DashboardStats/DashboardStats';
+import PartnersSection from '../../components/PartnersSection/PartnersSection';
 
 
 const blogs = [
@@ -80,7 +81,9 @@ function Home() {
 
         <div className='blog-section text-light py-5'>
             <div className='container d-flex flex-column align-items-center'>
-                <h2 className='text-center text-capitalize mb-5'>Latest on Updates</h2>
+                <h1 className="mb-4">
+                    <span className="text">Latest</span> On Updates
+                </h1>
                 <div className='row g-4'>
                     {blogs.map((blog) => (
                         <div key={blog.id} className='col-md-6 col-lg-4'>
@@ -101,6 +104,11 @@ function Home() {
                 </Link>
             </div>
         </div>
+
+        <div className="py-5">
+            <PartnersSection/>
+        </div>
+
     </div>
   )
 }

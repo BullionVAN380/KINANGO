@@ -10,7 +10,9 @@ import Ubuntu from '../../utils/pdfs/UBUNTU SI PRAC. LV 6.pdf';
 function Noticeboard() {
   return (
     <div className="container my-4">
-      <h1 className='text-center mb-5'>NOTICEBOARD</h1>
+        <h1 className="mb-4">
+        <span className="text centre">NOTICE</span>BOARD
+      </h1>
       <table className="table table-bordered table-hover">
         <thead className="thead-dark">
           <tr>

@@ -13,7 +13,10 @@ function Contact() {
     <div className='contact-page'>
         <header className='height-75'>
             <div className='container h-100 d-flex flex-column align-items-center justify-content-center text-light'>
-                <h1 className='text-center fw-semibold'>Get In Touch</h1>
+                
+                <h1 className="mb-4">
+                    <span className="text">Get</span> In Touch
+                </h1>
                 <p className='text-center w-75 mb-5'> We would love to hear from you! Whether you have questions about our programs, need assistance with the application process, or want to learn more about our campus facilities, feel free to reach out. Your future starts here, and we are here to help you every step of the way!</p>
             </div>
         </header>

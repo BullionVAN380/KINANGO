@@ -6,7 +6,9 @@ function FaqAccordion() {
   return (
     <div className='faq-section'>
         <div className='container d-flex flex-column align-items-center'>
-            <h2 className='text-center text-capitalize mb-5'>Frequently asked questions</h2>
+        <h1 className="mb-4">
+        <span className="text">Frequently</span> Asked Questions
+      </h1>
             <p className='text-center mb-5'>Here are some frequently asked questions (FAQs) for Technical and Vocational Education and Training (TVET) colleges, along with their answers</p>
             <Accordion defaultActiveKey="" flush>
                 <Accordion.Item eventKey='0'>
