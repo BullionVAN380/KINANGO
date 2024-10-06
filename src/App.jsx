@@ -53,7 +53,7 @@ function App() {
                 <NavDropdown.Item href="https://intellimis.com/login" className="custom-link">Students</NavDropdown.Item>
                 <NavDropdown.Item href="https://intellimis.com/back-login" className="custom-link">Staff</NavDropdown.Item>
                 <NavDropdown.Item href="https://intellimis.com/#free-demo" className="custom-link">Help</NavDropdown.Item>
-                <NavDropdown.Item href="/faqs" className="custom-link">FAQs</NavDropdown.Item>
+                <NavDropdown.Item href="https://intellimis.com/faq" className="custom-link">FAQs</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
@@ -75,7 +75,6 @@ function App() {
         <Route path='/whychoosektvc' element={<WhyChooseKTVC />} />
         <Route path='/principalmessage' element={<PrincipalMessage />} />
         <Route path='/trainers' element={ <TrainerList />} />
-        <Route path='/faqs' element={ <FaqAccordion />} />
       </Routes>
 
       <footer>
