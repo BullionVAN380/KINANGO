@@ -23,6 +23,9 @@ import TrainerList from './components/TrainerList/TrainerList';
 import FaqAccordion from './components/FaqAccordion/FaqAccordion';
 import { useState } from 'react'; // Import useState
 import Footer from './components/Footer/Footer';
+import FeeStructure from './components/FeeStructure/FeeStructure';
+import OnlineApplication from './components/OnlineApplication/OnlineApplication';
+import FinancialAid from './components/FinancialAid/FinancialAid';
 
 function App() {
   const [expanded, setExpanded] = useState(false); // State to track Navbar toggle
@@ -41,6 +44,12 @@ function App() {
             <Nav className='me-auto justify-content-end w-100'>
               <Link to='/' className='custom-link nav-link text-uppercase' onClick={handleLinkClick}>Home</Link>
               <Link to='/courses' className='custom-link nav-link text-uppercase' onClick={handleLinkClick}>Our Courses</Link>
+
+              <NavDropdown title="Admission" id="aboutus-dropdown" className='text-uppercase'>           
+                <NavDropdown.Item as={Link} to="/feestructure" className="custom-link" onClick={handleLinkClick}>Fee Structure</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/onlineapplication" className="custom-link" onClick={handleLinkClick}>Online Application</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/financialaid" className="custom-link" onClick={handleLinkClick}>Financial AID</NavDropdown.Item>
+              </NavDropdown>
 
               <NavDropdown title="About Us" id="aboutus-dropdown" className='text-uppercase'>
                 <NavDropdown.Item as={Link} to="/aboutktvc" className="custom-link" onClick={handleLinkClick}>About KTVC</NavDropdown.Item>
@@ -84,6 +93,9 @@ function App() {
         <Route path='/whychoosektvc' element={<WhyChooseKTVC />} />
         <Route path='/principalmessage' element={<PrincipalMessage />} />
         <Route path='/trainers' element={<TrainerList />} />
+        <Route path='/feestructure' element={<FeeStructure />} />
+        <Route path='/onlineapplication' element={<OnlineApplication />} />
+        <Route path='/financialaid' element={<FinancialAid />} />
       </Routes>
 
 
