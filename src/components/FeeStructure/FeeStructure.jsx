@@ -26,8 +26,8 @@ function FeeStructure() {
             left: "20px",
           }}
         >
-          <h5 className="mb-0">18</h5>
-          <p className="mb-0">OCT, 2018</p>
+          <h5 className="mb-0">1</h5>
+          <p className="mb-0">OCT,2024</p>
         </div>
       </div>
 
