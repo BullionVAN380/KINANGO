@@ -1,0 +1,22 @@
+.top-button {
+    position: relative;
+    padding: 0 15px;
+  }
+  
+  .top-button::before, .top-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20vw; /* Responsive width, 20% of the viewport width */
+    height: 1px;
+    background-color: white;
+  }
+  
+  .top-button::before {
+    left: -22vw; /* Distance adjusted for larger screens */
+  }
+  
+  .top-button::after {
+    right: -22vw; /* Distance adjusted for larger screens */
+  }
+  
