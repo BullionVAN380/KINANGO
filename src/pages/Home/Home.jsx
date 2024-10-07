@@ -7,7 +7,7 @@ import FaqAccordion from '../../components/FaqAccordion/FaqAccordion';
 import { Card } from 'react-bootstrap';
 import startcourse from '../../utils/images/courses.jpg';
 import JitumeImg from '../../utils/images/jitumie.jpg';
-import BarazaImg from '../../utils/images/baraza.png';
+import BarazaImg from '../../utils/images/baraza.webp';
 import FresherImg from '../../utils/images/fresher.jpg';
 import SliderShow from '../SliderShow/SliderShow';
 import Noticeboard from '../../components/NoticeBoard/NoticeBoard';
