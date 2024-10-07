@@ -143,7 +143,7 @@ function Footer() {
           <div className="row mt-4">
             <div className="col text-center">
               <p className="text-muted">
-                Disclaimer: The presentation of the information on this website in no way represents the expression of a political opinion whatsoever on the part of KMTC. Region, county, and community names are used solely for ease of reference and do not indicate a political or territorial preference.
+                Disclaimer: The presentation of the information on this website in no way represents the expression of a political opinion whatsoever on the part of KTVC. Region, county, and community names are used solely for ease of reference and do not indicate a political or territorial preference.
               </p>
             </div>
           </div>

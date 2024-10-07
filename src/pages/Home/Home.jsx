@@ -7,7 +7,7 @@ import FaqAccordion from '../../components/FaqAccordion/FaqAccordion';
 import { Card } from 'react-bootstrap';
 import startcourse from '../../utils/images/courses.jpg';
 import JitumeImg from '../../utils/images/jitumie.jpg';
-import BarazaImg from '../../utils/images/baraza.jpg';
+import BarazaImg from '../../utils/images/baraza.png';
 import FresherImg from '../../utils/images/fresher.jpg';
 import SliderShow from '../SliderShow/SliderShow';
 import Noticeboard from '../../components/NoticeBoard/NoticeBoard';
@@ -19,8 +19,8 @@ const blogs = [
     {
         id: 1,
         img: [BarazaImg],
-        title: 'Students Baraza',
-        description: 'Baraza is a Kiswahili word meaning a public meeting(s) that is used as a platform for creating awareness, responding to issues affecting a given community, sharing vital information, providing citizens with the opportunity to identify and propose solutions to concerns.'
+        title: 'Talent Show',
+        description: 'The student are invited for a special presentation of talent show which will happen on 10th October 2024, There will be all sorts of presntation at the end of it all ,Selection of a top dancers,Mr /Ms Mazingira .'
     },
     {
         id: 2,

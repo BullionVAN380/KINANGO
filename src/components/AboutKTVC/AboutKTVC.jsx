@@ -10,11 +10,8 @@ function AboutKTVC() {
         <p className="lead">
           KTVC is a State Corporation established by Section 3 of the Kenya Medical
           Training College Act (Cap 261 of the laws of Kenya), and falls under the 
-          Ministry of Health. The College is entrusted with the role of training 
-          various disciplines in the health sector, conducting research, and consultancy.
-          The College has 84 Campuses and 5 satellites, strategically located in 45 of the
-          47 counties in the country, offering 95 medical courses within its 18
-          departments.
+          Ministry of Education. The College is entrusted with the role of training 
+          various disciplines in the health sector, conducting research, and consul.
         </p>
       </div>
 
