@@ -17,7 +17,7 @@ const StatsCard = ({ icon, number, label }) => {
         {icon}
       </div>
       <h1>
-        {inView ? <CountUp end={number} duration={3} /> : 0}  {/* Start counting when inView is true */}
+        {inView ? <CountUp end={number} duration={20} /> : 0}  {/* Start counting when inView is true */}
       </h1>
       <p>{label}</p>
     </div>
@@ -35,7 +35,7 @@ const DashboardStats = () => {
         />
         <StatsCard 
           icon={<FaChalkboardTeacher className='icon-color fa-2x' size={50} />} 
-          number={34} 
+          number={40} 
           label="Number of Trainers" 
         />
         <StatsCard         
@@ -45,7 +45,7 @@ const DashboardStats = () => {
         />
         <StatsCard          
           icon={<FaAward className='icon-color fa-2x' size={50} />} 
-          number={2} 
+          number={3} 
           label="Number of Examination Boards" 
         />
       </div>
