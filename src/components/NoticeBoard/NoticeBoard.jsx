@@ -22,7 +22,7 @@ function Noticeboard() {
         </thead>
         <tbody>
           <tr>
-            <td>INFORMATION SECURITY</td>
+            <td>BARAZA MEETING PROGRAM</td>
             <td className="text-center">
               <a href={InfoSec} download className="text-purple" style={{ fontSize: '24px' }}>
                 <i className="fas fa-download"></i>
@@ -30,7 +30,7 @@ function Noticeboard() {
             </td>
           </tr>
           <tr>
-            <td>INFORMATION SECURITY 2</td>
+            <td>HOW TO ACCESS YOUR POTAL DOCUMENT</td>
             <td className="text-center">
               <a href={InfoSec2} download className="text-purple" style={{ fontSize: '24px' }}>
                 <i className="fas fa-download"></i>
@@ -38,7 +38,7 @@ function Noticeboard() {
             </td>
           </tr>
           <tr>
-            <td>SOFTWARE INSTALLATION</td>
+            <td>JITUME TRAINING PROGRAM AS PER LEVEL</td>
             <td className="text-center">
               <a href={SoftIn} download className="text-purple" style={{ fontSize: '24px' }}>
                 <i className="fas fa-download"></i>
@@ -46,7 +46,7 @@ function Noticeboard() {
             </td>
           </tr>
           <tr>
-            <td>SOFTWARE INSTALLATION 2</td>
+            <td>MEETING OF CU</td>
             <td className="text-center">
               <a href={SoftIn2} download className="text-purple" style={{ fontSize: '24px' }}>
                 <i className="fas fa-download"></i>
@@ -54,7 +54,7 @@ function Noticeboard() {
             </td>
           </tr>
           <tr>
-            <td>UBUNTU INSTALLATION</td>
+            <td>MEETING OF MUSLIM ON THURSDAY</td>
             <td className="text-center">
               <a href={Ubuntu} download className="text-purple" style={{ fontSize: '24px' }}>
                 <i className="fas fa-download"></i>
