@@ -13,6 +13,7 @@ import SliderShow from '../SliderShow/SliderShow';
 import Noticeboard from '../../components/NoticeBoard/NoticeBoard';
 import DashboardStats from '../../components/DashboardStats/DashboardStats';
 import PartnersSection from '../../components/PartnersSection/PartnersSection';
+import PortalBaner from '../../components/PortalBaner/PortalBaner';
 
 
 const blogs = [
@@ -49,6 +50,10 @@ function Home() {
 
         <div className="py-5">
             <DashboardStats/>
+        </div>
+
+        <div className="py-5">
+           <PortalBaner />
         </div>
 
         <div className='py-5 bg-light'>
